@@ -1,3 +1,4 @@
+import Button from "./components/Button"
 import Counter from "./components/Counter"
 
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <h1>Learn web development</h1>
       <Counter />
+      <Button />
     </>
 
   )
