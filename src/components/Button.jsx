@@ -1,13 +1,17 @@
-function Button() {
+import languages from "../assets/data/languages"
+
+function Button(props) {
+    
 
     return (
+
         <div>
-            <div>
+            {/* <div>
                 <button >
-                   Html
+                    {title}
                 </button>
             </div>
-            <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam vel explicabo illo eaque distinctio nesciunt aperiam, accusantium aspernatur doloremque, similique cumque doloribus quas rerum commodi dolor nostrum dolores harum officia?</div>
+            <div>{description}</div> */}
         </div>
     )
 }
