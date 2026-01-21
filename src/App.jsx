@@ -6,6 +6,10 @@ import { useState } from "react"
 
 function App() {
  // useState per tab attiva
+
+ //seletedlang è il linguaggio attualmente selezionato
+ //setseletedlang è la funzione per modificarlo
+ //usestate la keyword, e (languages[2]) il valore iniziale che mostra
  const [seletedLang, setSelectedLang] = useState(languages[2])
 
 
@@ -17,13 +21,14 @@ function App() {
       <ButtonResult /> */}
 
       <div>
+        {/* qua ciclo sull'array languages */}
         {languages.map((element)=>(
-
+          // al click la funzione fa cambiare la UI
           <button onClick={() => setSelectedLang(element)}>{element.title}</button>
         ))}
       </div>
 
-
+      {/* contenuto che vado ad aggiornare di volta in volta */}
       <div>
         <h2>{seletedLang.title}</h2>
         <p>{seletedLang.description}</p>
