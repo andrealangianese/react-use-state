@@ -1,19 +1,15 @@
-import languages from "../assets/data/languages"
-
 function Button(props) {
-    
 
-    return (
+    // destrutturo le props
+    const title = props.title;
+    const onClick = props.onClick
 
-        <div>
-            {/* <div>
-                <button >
-                    {title}
-                </button>
-            </div>
-            <div>{description}</div> */}
-        </div>
-    )
+  return (
+    // al click parte la funzione e esegue title
+    <button onClick={onClick}>
+      {title}
+    </button>
+  )
 }
 
 export default Button

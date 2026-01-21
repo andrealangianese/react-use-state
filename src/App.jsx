@@ -16,23 +16,12 @@ function App() {
 
   return (
     <>
+      
+      <Counter />
       <h1>Learn web development</h1>
-      {/* <Counter />
-      <ButtonResult /> */}
+      <ButtonResult /> 
 
-      <div>
-        {/* qua ciclo sull'array languages */}
-        {languages.map((element)=>(
-          // al click la funzione fa cambiare la UI
-          <button onClick={() => setSelectedLang(element)}>{element.title}</button>
-        ))}
-      </div>
-
-      {/* contenuto che vado ad aggiornare di volta in volta */}
-      <div>
-        <h2>{seletedLang.title}</h2>
-        <p>{seletedLang.description}</p>
-      </div>
+    
     </>
 
   )
